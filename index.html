@@ -2,6 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <SCRIPT LANGUAGE="JavaScript">
+function readText (form) {
+    TestVar =form.inputbox.value;
+    alert ("You typed: " + TestVar);
+}
+function writeText (form) {
+    form.inputbox.value = "Have a nice day!"
+}
+</SCRIPT>
+
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -69,7 +80,7 @@ a {
 </head>
 <body>
 
-<form action="/action_page.php">
+<FORM NAME="myform" ACTION="" METHOD="GET">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
